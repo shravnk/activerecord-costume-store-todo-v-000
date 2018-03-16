@@ -2,8 +2,6 @@ require 'pry'
 # Create your costume_stores migration here
 class CreateCostumeStores < ActiveRecord::Migration[5.1]
   def change
-    d = Date.today
-    binding.pry
     create_table :costume_stores do |c|
       c.string :name
       c.string :location
